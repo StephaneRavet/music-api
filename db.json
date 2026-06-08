@@ -1,0 +1,3 @@
+{
+  "_comment": "UNUSED — the backend now uses SQLite (data.db, created automatically). This file is a leftover and can be deleted."
+}
