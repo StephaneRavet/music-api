@@ -17,6 +17,16 @@ Au premier lancement, le fichier `data.db` (SQLite) est créé automatiquement, 
 
 > Pour repartir d'une base vierge : supprimer `data.db` (et `data.db-shm` / `data.db-wal`) puis relancer.
 
+### 🖼️ Vraies pochettes d'albums (optionnel)
+
+Par défaut, `coverUrl` pointe vers des images de remplissage (picsum.photos). Pour récupérer les **vraies pochettes** depuis l'API iTunes et les enregistrer dans la base :
+
+```bash
+npm run covers
+```
+
+Le script crée/seed la base si besoin, interroge iTunes pour chaque morceau et met à jour `coverUrl`. Nécessite un accès réseau.
+
 ### Variables d'environnement (optionnelles)
 
 | Variable | Défaut | Rôle |
